@@ -47,10 +47,6 @@ input [type=text], input [type=password], textarea {
             font-weight: bold;
         }
 
-        .menu li a {
-            color: #eee;
-        }
-
 #sidebar {
     background: #2a2c36;
     color: #eee;
