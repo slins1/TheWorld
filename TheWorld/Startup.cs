@@ -11,6 +11,8 @@ using TheWorld.Services;
 using Microsoft.Extensions.Configuration;
 using TheWorld.Models;
 using Newtonsoft.Json.Serialization;
+using AutoMapper;
+using TheWorld.ViewModels;
 
 namespace TheWorld
 {
@@ -67,6 +69,11 @@ namespace TheWorld
             WorldContexSeedData seeder,
             ILoggerFactory loggerFactory)
         {
+            Mapper.Initialize(config =>
+            {
+                config.CreateMap<TripViewModel, Trip>().ReverseMap();
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
