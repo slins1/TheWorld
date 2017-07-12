@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using TheWorld.Models;
 using TheWorld.ViewModels;
 
-namespace TheWorld.Api
+namespace TheWorld.Controllers.Api
 {
     public class TripsController : Controller
     {
